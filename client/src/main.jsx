@@ -5,6 +5,8 @@ import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from './store_UseContext/Authentication';
+import { createRoot } from 'react-dom/client';
+
 
 const theme = createTheme({
   typography: {
