@@ -1,0 +1,149 @@
+/* Carousell.css */
+
+/* Main box styles */
+.main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: black solid 2px;
+   
+  }
+  
+  .text-box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img-box {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img-box img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .text-box h1 {
+    font-family: monospace;
+    font-size: 5rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .Category-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    gap: 0.5rem;
+    font-family: "Playwrite NZ", cursive;
+    font-optical-sizing: auto;
+    margin-left: -5rem;
+  }
+  
+  .Category-box h4 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .button-box {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .main-box {
+      position: relative; /* Make it a relative container */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+      background-size: cover;
+      border: none;
+      overflow: hidden; /* Ensure no overflow from child elements */
+    }
+  
+    .img-box {
+      position: absolute; /* Position absolutely to cover the entire main-box */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the box without distortion */
+      z-index: 1; /* Place behind the text-box */
+    }
+  
+    .text-box {
+      position: relative; /* Ensure it sits above the img-box */
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      border: black solid 2px;
+      z-index: 2; /* Place above the img-box */
+    }
+  
+    .text-box h1 {
+      font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+  
+    .Category-box {
+      margin-left: 0;
+    }
+  
+    .button-box {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+  
+
+/* .carousel.carousel-dark .carousel-indicators {
+    bottom: -0.8rem; 
+  } */
+  
+  .carousel.carousel-dark .carousel-indicators button {
+    width: 0.4rem; /* Smaller width of the circular indicator */
+    height: 0.4rem; /* Smaller height of the circular indicator */
+    border-radius: 50%; /* Make the indicators circular */
+    background-color: #ffffff; /* Default color of inactive indicators */
+    border: 1px solid #000000; /* Optional: Add border for better visibility */
+    transition: background-color 0.3s ease;
+    margin:0.2rem; /* Smooth transition for color change */
+  }
+  
+  .carousel.carousel-dark .carousel-indicators .active {
+    background: linear-gradient(45deg, #30cfd0,  #330867); /* Gradient color for active indicator */
+  }
+  
+  @media screen and (max-width: 800px) {
+    .text-box h1 {
+      font-size: 3rem; /* Reduce font size for screens 720px or smaller */
+    }
+  
+    /* .Category-box h4 {
+      font-size: 0.8rem; 
+    } */
+     .main-box {
+        height:30vh;
+     }
+  }
