@@ -8,10 +8,10 @@ const cors = require('cors');
 
 const app=express();
 
-const corsOptions={
-  origin:"http://localhost:5173",
-  method:"GET,POST,PUT",
-  credentials:true,
+const corsOptions = {
+  origin: "https://blog-haven-bcj88locr-neha27gupta5s-projects.vercel.app",
+  methods: "GET,POST,PUT,DELETE",
+  credentials: true,
 }
 app.use(cors(corsOptions));
 
