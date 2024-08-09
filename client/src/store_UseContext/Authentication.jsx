@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
 
     try {
       console.log('Fetching user data');
-      const response = await fetch("blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/User", {
+      const response = await fetch("https://blog-haven.onrender.com/blog/User", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
