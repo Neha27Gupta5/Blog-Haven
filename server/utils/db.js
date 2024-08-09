@@ -4,6 +4,7 @@ const MONGODBURI=process.env.MONGODBURI;
 
 const connection = async () => {
     try {
+        console.log(MONGODBURI);
         await mongoose.connect(MONGODBURI);
         console.log('Database connected successfully');
     } catch (error) {
