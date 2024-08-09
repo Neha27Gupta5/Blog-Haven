@@ -88,7 +88,7 @@ const Post = () => {
     setPostZero(false);
   
     try {
-      const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/post/keyword', {
+      const response = await fetch('https://blog-haven.onrender.com/blog/post/keyword', {
         // method: 'GET', // Ensure the correct method is used
         headers: {
           'Content-Type': 'application/json',
@@ -159,7 +159,7 @@ const Post = () => {
       // setLoading(true);
       // setPostZero(false);
       try {
-        const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/post/category', {
+        const response = await fetch('https://blog-haven.onrender.com/blog/post/category', {
           headers: {
             'Content-Type': 'application/json',
             Category: categorySelected,
