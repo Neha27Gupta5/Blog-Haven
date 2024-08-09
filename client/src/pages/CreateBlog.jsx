@@ -139,7 +139,7 @@ const CreatePost = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/fetch/category');
+        const response = await fetch('https://blog-haven.onrender.com/blog/fetch/category');
         if (!response.ok) {
           throw new Error('Failed to fetch Categories');
         }
@@ -161,7 +161,7 @@ const CreatePost = () => {
         data.append('name', file.name);
         data.append('file', file);
 
-        const url = 'blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/file/upload';
+        const url = 'https://blog-haven.onrender.com/blog/file/upload';
         const response = await fetch(url, {
           method: 'POST',
           body: data,
@@ -201,7 +201,7 @@ const CreatePost = () => {
         Name: userData.Name,
         username:userData.username,
       };
-      const url = 'http://localhost:5000/blog/create';
+      const url = 'https://blog-haven.onrender.com/blog/create';
       const response = await fetch(url, {
         method: 'POST',
         headers: {
