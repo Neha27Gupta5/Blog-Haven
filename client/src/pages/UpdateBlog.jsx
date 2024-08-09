@@ -137,7 +137,7 @@ const UpdatePost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-          const response = await fetch(`http://localhost:5000/blog/detail/post`, {
+          const response = await fetch(`blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/detail/post`, {
               method: 'GET',
               headers: {
                   'Content-Type': 'application/json',
@@ -189,7 +189,7 @@ const UpdatePost = () => {
   const handleUpdatePost = async () => {
     try {
       console.log('just started');
-      const response = await fetch('http://localhost:5000/blog/post/update', {
+      const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/post/update', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
