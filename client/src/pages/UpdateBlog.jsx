@@ -137,7 +137,7 @@ const UpdatePost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-          const response = await fetch(`blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/detail/post`, {
+          const response = await fetch(`https://blog-haven.onrender.com/blog/detail/post`, {
               method: 'GET',
               headers: {
                   'Content-Type': 'application/json',
@@ -169,7 +169,7 @@ const UpdatePost = () => {
         data.append('name', file.name);
         data.append('file', file);
 
-        const url = 'http://localhost:5000/blog/file/upload';
+        const url = 'https://blog-haven.onrender.com/blog/file/upload';
         const response = await fetch(url, {
           method: 'POST',
           body: data,
@@ -189,7 +189,7 @@ const UpdatePost = () => {
   const handleUpdatePost = async () => {
     try {
       console.log('just started');
-      const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/post/update', {
+      const response = await fetch('https://blog-haven.onrender.com/blog/post/update', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
