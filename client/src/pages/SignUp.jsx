@@ -123,7 +123,7 @@ const SignUp = () => {
     }
 
     try {
-      const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/signup', {
+      const response = await fetch('https://blog-haven.onrender.com/blog/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
