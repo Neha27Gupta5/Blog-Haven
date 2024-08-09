@@ -1,5 +1,5 @@
 const User = require('../DbSchema/userSchema');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const signupController = async (req, res, next) => {
