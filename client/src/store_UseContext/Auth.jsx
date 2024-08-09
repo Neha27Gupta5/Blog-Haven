@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
     if (!token) return;
 
     try {
-      const response = await fetch("http://localhost:5000/blog/User", {
+      const response = await fetch("https://blog-haven.onrender.com/blog/User", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
