@@ -139,7 +139,7 @@ const CreatePost = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('http://localhost:5000/blog/fetch/category');
+        const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/fetch/category');
         if (!response.ok) {
           throw new Error('Failed to fetch Categories');
         }
@@ -161,7 +161,7 @@ const CreatePost = () => {
         data.append('name', file.name);
         data.append('file', file);
 
-        const url = 'http://localhost:5000/blog/file/upload';
+        const url = 'blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/file/upload';
         const response = await fetch(url, {
           method: 'POST',
           body: data,
