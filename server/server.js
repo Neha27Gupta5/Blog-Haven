@@ -9,7 +9,7 @@ const cors = require('cors');
 const app=express();
 
 const corsOptions = {
-  origin: "https://blog-haven-bcj88locr-neha27gupta5s-projects.vercel.app",
+  origin: "https://blog-haven-theta.vercel.app/",
   methods: "GET,POST,PUT,DELETE",
   credentials: true,
 }
