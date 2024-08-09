@@ -39,7 +39,7 @@ const Comments = ({ post }) => {
 
   const fetchComments = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/blog/comment/all`, {
+      const response = await fetch(`https://blog-haven.onrender.com/blog/comment/all`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ const Comments = ({ post }) => {
       return;
     }
     try {
-      const response = await fetch('http://localhost:5000/blog/comment/new', {
+      const response = await fetch('https://blog-haven.onrender.com/blog/comment/new', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ const Comments = ({ post }) => {
 
   const removeComment = async (commentId) => {
     try {
-      const response = await fetch('http://localhost:5000/blog/comment/delete', {
+      const response = await fetch('https://blog-haven.onrender.com/blog/comment/delete', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
