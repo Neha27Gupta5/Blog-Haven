@@ -54,7 +54,7 @@ const SimpleDrawer = ({ handleSelect }) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('http://localhost:5000/blog/fetch/category');
+        const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/fetch/category');
         if (!response.ok) {
           throw new Error('Failed to fetch Categories');
         }
