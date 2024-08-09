@@ -121,7 +121,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch('blog-haven-server-e6l76oh7u-neha27gupta5s-projects.vercel.app/blog/login', {
+      const response = await fetch('https://blog-haven.onrender.com/blog/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
