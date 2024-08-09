@@ -85,7 +85,7 @@ const DetailView = () => {
     
     if(userData.username===post.username){
       try{
-        const response = await fetch('http://localhost:5000/blog/post/delete', {
+        const response = await fetch('https://blog-haven.onrender.com/blog/post/delete', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ const DetailView = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/blog/detail/post`, {
+        const response = await fetch(`https://blog-haven.onrender.com/blog/detail/post`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
