@@ -1,7 +1,7 @@
 const grid = require('gridfs-stream');
 const mongoose = require('mongoose');
 
-const url = 'http://localhost:5000/blog/';
+const url = 'https://blog-haven.onrender.com/blog/';
 
 let gfs, gridfsBucket;
 const conn = mongoose.connection;
