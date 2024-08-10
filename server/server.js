@@ -17,7 +17,7 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 
-app.use('/Blog',router);
+app.use('/blog',router);
 
 app.use(errorMiddleware);
 
