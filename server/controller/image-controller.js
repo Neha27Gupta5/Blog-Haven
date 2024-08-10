@@ -36,6 +36,9 @@ const getImage = async (request, response) => {
         }
 
         const readStream = gridfsBucket.openDownloadStream(file._id);
+          response.header('Access-Control-Allow-Origin', '*');
+        response.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+        response.header('Content-Type', 'image/jpeg');
         readStream.pipe(response);
     } catch (error) {
         console.error("Error retrieving file:", error.message);
