@@ -9,7 +9,7 @@ const cors = require('cors');
 const app=express();
 
 const corsOptions = {
-  origin: "https://blog-haven-theta.vercel.app/",
+  origin: "astonishing-babka-1c358e.netlify.app/",
   methods: "GET,POST,PUT,DELETE",
   credentials: true,
 }
