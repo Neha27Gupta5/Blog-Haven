@@ -53,6 +53,7 @@ const userSchema = new Schema({
       secretKey,
       { expiresIn: '30d' }
     );
+      console.log('token generated is:',token);
     return token;
   }
 
