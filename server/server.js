@@ -9,7 +9,7 @@ const cors = require('cors');
 const app=express();
 
 const corsOptions = {
-  origin: "astonishing-babka-1c358e.netlify.app",
+  origin: "https://astonishing-babka-1c358e.netlify.app",
   methods: "GET,POST,PUT,DELETE",
   credentials: true,
 }
