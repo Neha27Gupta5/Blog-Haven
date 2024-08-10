@@ -39,6 +39,7 @@ const signupController = async (req, res, next) => {
     const userData = { Name, username, email, password };
     const user = await User.create(userData);
     console.log('user data:',user);
+    const token=user.createToken();
     res.status(201).json({ msg: 'User created successfully' });
 
   } catch (error) {
