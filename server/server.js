@@ -10,7 +10,7 @@ const app=express();
 
 const corsOptions = {
   // origin: "https://astonishing-babka-1c358e.netlify.app",
-  origin: "http://localhost:5173/",
+  origin: "http://localhost:5173",
   methods: "GET,POST,PUT,DELETE",
   credentials: true,
 }
