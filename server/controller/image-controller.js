@@ -15,6 +15,7 @@ conn.once('open', () => {
 });
 
 const uploadImage = (request, response) => {
+     console.log("File received:", request.file);
     if (!request.file) {
         console.error("File not found in the request.");
         return response.status(404).json("File not found");
