@@ -4,7 +4,7 @@ const PostSchema = mongoose.Schema({
     title: {
         type: String,
         required: true,
-        unique: true
+        unique: true 
     },
     description: {
         type: String,
@@ -41,6 +41,7 @@ const PostSchema = mongoose.Schema({
     }
 });
 
+
 PostSchema.index({
     title: 'text',
     description: 'text',
@@ -48,9 +49,8 @@ PostSchema.index({
     Name: 'text'
 });
 
-PostSchema.index({ createdAt: -1 });
+PostSchema.index({ createDate: -1 });
 
 const Post = mongoose.model('Post', PostSchema);
-
 
 module.exports = Post;
