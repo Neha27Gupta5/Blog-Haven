@@ -37,7 +37,7 @@ const PopularPost = async (req, res) => {
   
  const postDataWithFilter = async(req,res)=>{
      const category = req.headers['category'];
-    
+     console.log('category',category);
 
      try {
       let posts;
@@ -49,7 +49,7 @@ const PopularPost = async (req, res) => {
        
         posts = await Post.find({categories:category});
       } 
-      
+      console.log('posts',posts);
       res.status(200).json(posts);
     } catch (error) {
       console.error('Error fetching posts with filter:', error);
