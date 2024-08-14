@@ -16,7 +16,7 @@ const corsOptions = {
   // allowedHeaders: ["Content-Type", "Authorization"] 
     origin: ['http://localhost:5173', 'https://astonishing-babka-1c358e.netlify.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'Category'],
+    allowedHeaders: ['Content-Type', 'Authorization', '*'],
 }
 app.use(cors(corsOptions));
 
