@@ -15,7 +15,6 @@ const commentSchema = new Schema({
   username: {
     type: String,
     required: true,
-    unique: true,
     trim: true,
   },
   postId: {
