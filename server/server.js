@@ -14,7 +14,7 @@ const corsOptions = {
   // methods: "GET,POST,PUT,DELETE",
   // credentials: true,
   // allowedHeaders: ["Content-Type", "Authorization"] 
-    origin: ['http://localhost:5173', 'https://astonishing-babka-1c358e.netlify.app'],
+    origin: ['http://localhost:5173', 'https://bloghaven.netlify.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', '*'],
 }
